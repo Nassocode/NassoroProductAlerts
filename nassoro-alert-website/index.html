@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Information -->
+    <title>Nassoro Alert | Smart Product Monitoring</title>
+
+    <meta
+        name="description"
+        content="Nassoro Alert helps businesses monitor stock, product expiry dates and supplier price changes."
+    >
+
+    <!-- PWA -->
+    <meta name="theme-color" content="#0F172A">
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <!-- Logo -->
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">🔔</span>
+                <span>Nassoro <strong>Alert</strong></span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home" class="nav-link active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#features" class="nav-link">
+                        Features
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#how-it-works" class="nav-link">
+                        How It Works
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#app" class="nav-link">
+                        App
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#faq" class="nav-link">
+                        FAQ
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Install Button -->
+
+            <button id="installBtn" class="btn btn-primary">
+                Install App
+            </button>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <div class="badge">
+                        🔔 Smart Product Monitoring
+                    </div>
+
+
+                    <h1>
+                        Know Your Product Status
+                        <span>Before It Becomes a Problem.</span>
+                    </h1>
+
+
+                    <p>
+                        Nassoro Alert helps businesses monitor product stock,
+                        expiry dates and supplier price changes — and sends
+                        smart alerts when action is needed.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#features" class="btn btn-primary">
+                            Explore Features
+                        </a>
+
+                        <button id="heroInstallBtn" class="btn btn-outline">
+                            📲 Install Website App
+                        </button>
+
+                    </div>
+
+
+                    <!-- Quick Statistics -->
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>🔔</strong>
+                            <span>Smart Alerts</span>
+                        </div>
+
+                        <div>
+                            <strong>📦</strong>
+                            <span>Product Monitoring</span>
+                        </div>
+
+                        <div>
+                            <strong>📊</strong>
+                            <span>Business Insights</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Dashboard Preview -->
+
+                <div class="hero-dashboard">
+
+                    <div class="dashboard-card">
+
+                        <div class="dashboard-header">
+
+                            <div>
+                                <p>Good Morning 👋</p>
+                                <h3>Business Overview</h3>
+                            </div>
+
+                            <div class="notification-icon">
+                                🔔
+                                <span>3</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-grid">
+
+                            <div class="stat-card">
+
+                                <span>📦</span>
+
+                                <div>
+                                    <small>Total Products</small>
+                                    <h3>248</h3>
+                                </div>
+
+                            </div>
+
+
+                            <div class="stat-card warning">
+
+                                <span>⚠️</span>
+
+                                <div>
+                                    <small>Low Stock</small>
+                                    <h3>12</h3>
+                                </div>
+
+                            </div>
+
+
+                            <div class="stat-card danger">
+
+                                <span>⏰</span>
+
+                                <div>
+                                    <small>Expiring Soon</small>
+                                    <h3>8</h3>
+                                </div>
+
+                            </div>
+
+
+                            <div class="stat-card success">
+
+                                <span>📉</span>
+
+                                <div>
+                                    <small>Price Drops</small>
+                                    <h3>5</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="alert-preview">
+
+                            <div class="alert-item critical">
+
+                                <span>🔴</span>
+
+                                <div>
+                                    <strong>Low Stock Alert</strong>
+                                    <p>Cooking Oil is running low.</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="alert-item">
+
+                                <span>🟠</span>
+
+                                <div>
+                                    <strong>Expiry Alert</strong>
+                                    <p>Milk expires in 3 days.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+
+        <section id="about" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        ABOUT NASSORO ALERT
+                    </span>
+
+                    <h2>
+                        Smart Monitoring for Smarter Businesses
+                    </h2>
+
+                    <p>
+                        Nassoro Alert is designed to help businesses avoid
+                        unnecessary losses by monitoring important product
+                        information and providing timely alerts.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-card">
+
+                        <span class="feature-icon">📦</span>
+
+                        <h3>Monitor Products</h3>
+
+                        <p>
+                            Keep track of your products, quantities,
+                            categories and important information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <span class="feature-icon">🔔</span>
+
+                        <h3>Receive Alerts</h3>
+
+                        <p>
+                            Get notified when stock is low, products are
+                            expiring or supplier prices change.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <span class="feature-icon">📈</span>
+
+                        <h3>Take Action Early</h3>
+
+                        <p>
+                            Identify problems early and make better
+                            decisions before losses happen.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FEATURES
+        ========================== -->
+
+        <section id="features" class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        CORE FEATURES
+                    </span>
+
+                    <h2>
+                        Everything You Need to Monitor Your Products
+                    </h2>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            📉
+                        </div>
+
+                        <h3>Low Stock Alerts</h3>
+
+                        <p>
+                            Know when your product quantity reaches
+                            a dangerous level.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ⏳
+                        </div>
+
+                        <h3>Expiry Monitoring</h3>
+
+                        <p>
+                            Monitor products approaching their expiry
+                            date before they become a loss.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            💰
+                        </div>
+
+                        <h3>Supplier Price Alerts</h3>
+
+                        <p>
+                            Track supplier price changes and identify
+                            better purchasing opportunities.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            📊
+                        </div>
+
+                        <h3>Business Insights</h3>
+
+                        <p>
+                            Understand your product situation through
+                            useful statistics and reports.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🗂️
+                        </div>
+
+                        <h3>Batch Management</h3>
+
+                        <p>
+                            Organize products using batches and
+                            expiry information.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🔄
+                        </div>
+
+                        <h3>FEFO Management</h3>
+
+                        <p>
+                            Support First Expired, First Out product
+                            management.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+
+        <section id="how-it-works" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        HOW IT WORKS
+                    </span>
+
+                    <h2>
+                        Simple Process. Powerful Monitoring.
+                    </h2>
+
+                </div>
+
+
+                <div class="steps-grid">
+
+                    <div class="step-card">
+
+                        <span class="step-number">01</span>
+
+                        <h3>Add Your Products</h3>
+
+                        <p>
+                            Add products, stock levels, expiry dates
+                            and supplier information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <span class="step-number">02</span>
+
+                        <h3>We Monitor</h3>
+
+                        <p>
+                            Nassoro Alert continuously checks important
+                            product conditions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <span class="step-number">03</span>
+
+                        <h3>Receive Smart Alerts</h3>
+
+                        <p>
+                            Get alerts when your products need attention.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <span class="step-number">04</span>
+
+                        <h3>Take Action</h3>
+
+                        <p>
+                            Make decisions early and protect your business.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             APP SECTION
+        ========================== -->
+
+        <section id="app" class="section app-section">
+
+            <div class="container app-content">
+
+                <div>
+
+                    <span class="section-tag">
+                        NASSORO ALERT APP
+                    </span>
+
+                    <h2>
+                        Your Product Alerts.
+                        Anywhere You Go.
+                    </h2>
+
+                    <p>
+                        The Nassoro Alert application will allow you
+                        to monitor your business and receive important
+                        alerts from your mobile device.
+                    </p>
+
+
+                    <div class="app-features">
+
+                        <p>✓ Monitor products</p>
+                        <p>✓ Receive alerts</p>
+                        <p>✓ View business insights</p>
+                        <p>✓ Manage stock information</p>
+
+                    </div>
+
+
+                    <button class="btn btn-primary install-trigger">
+                        📲 Install Nassoro Alert
+                    </button>
+
+                </div>
+
+
+                <div class="phone-preview">
+
+                    <div class="phone">
+
+                        <div class="phone-screen">
+
+                            <div class="phone-top">
+                                <strong>Nassoro Alert</strong>
+                                <span>🔔</span>
+                            </div>
+
+                            <h3>Hello, Nassoro 👋</h3>
+
+                            <div class="phone-alert red">
+                                🔴 2 Critical Alerts
+                            </div>
+
+                            <div class="phone-alert orange">
+                                🟠 5 Expiring Soon
+                            </div>
+
+                            <div class="phone-alert green">
+                                🟢 12 Products Healthy
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FAQ
+        ========================== -->
+
+        <section id="faq" class="section">
+
+            <div class="container faq-container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        FAQ
+                    </span>
+
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
+
+                </div>
+
+
+                <details class="faq-item">
+
+                    <summary>
+                        What is Nassoro Alert?
+                    </summary>
+
+                    <p>
+                        Nassoro Alert is a smart system designed to
+                        monitor products and provide alerts about stock,
+                        expiry and supplier price changes.
+                    </p>
+
+                </details>
+
+
+                <details class="faq-item">
+
+                    <summary>
+                        Can I use Nassoro Alert on my phone?
+                    </summary>
+
+                    <p>
+                        Yes. Nassoro Alert is designed with mobile users
+                        in mind and the website can also be installed as
+                        a Progressive Web App.
+                    </p>
+
+                </details>
+
+
+                <details class="faq-item">
+
+                    <summary>
+                        Does the system monitor expiry dates?
+                    </summary>
+
+                    <p>
+                        Yes. One of the core features is expiry monitoring
+                        and alerts for products approaching expiry.
+                    </p>
+
+                </details>
+
+
+                <details class="faq-item">
+
+                    <summary>
+                        Will there be a desktop version?
+                    </summary>
+
+                    <p>
+                        Yes. Desktop and laptop access is part of the
+                        future development roadmap.
+                    </p>
+
+                </details>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DOWNLOAD CTA
+        ========================== -->
+
+        <section class="download-section">
+
+            <div class="container">
+
+                <div class="download-box">
+
+                    <span>🚀</span>
+
+                    <h2>
+                        Ready to Monitor Your Products Smarter?
+                    </h2>
+
+                    <p>
+                        Install Nassoro Alert and stay informed before
+                        problems affect your business.
+                    </p>
+
+                    <button class="btn btn-light install-trigger">
+                        Install Nassoro Alert
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact" class="section">
+
+            <div class="container contact-container">
+
+                <div>
+
+                    <span class="section-tag">
+                        CONTACT US
+                    </span>
+
+                    <h2>
+                        Let's Build Smarter Businesses Together
+                    </h2>
+
+                    <p>
+                        Have questions or want to know more about
+                        Nassoro Alert? Contact us.
+                    </p>
+
+                </div>
+
+
+                <form class="contact-form">
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                    <textarea
+                        placeholder="Your Message"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                    <button class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="#home" class="logo">
+                    🔔 Nassoro <strong>Alert</strong>
+                </a>
+
+                <p>
+                    Smart Product Monitoring and Alert System.
+                </p>
+
+            </div>
+
+
+            <p>
+                © 2026 Nassoro Alert. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
